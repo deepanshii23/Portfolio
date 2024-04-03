@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - Portfolio</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #081b29;
+      color: #efecec;
+    }
+    .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    position: relative;
+    font-size: 25px;
+    color: beige;
+    text-decoration: none;
+    font-weight: 600;
+}
+.logo::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(241, 237, 237);
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+}
+.navbar a {
+    font-size: 18px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: rgb(193, 117, 18);
+}
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+    }
+
+    .logo {
+      font-size: 24px;
+      color: #081b29;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .navbar a {
+      margin: 0 10px;
+      color: #f2ebeb;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .navbar a:hover,
+    .navbar a.active {
+      color: #081b29;
+    }
+
+    .services {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 50px;
+    }
+
+    .service-item {
+      width: calc(33.33% - 40px);
+      margin: 20px;
+      padding: 30px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .service-item:hover {
+      transform: translateY(-10px);
+    }
+
+    .service-item i {
+      font-size: 48px;
+      color: #081b29;
+    }
+
+    .service-item h3 {
+      margin: 20px 0;
+      font-size: 24px;
+      color: #081b29;
+    }
+
+    .service-item p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="logo">Portfolio</a>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about1.html">About</a>
+      <a href="service.html">Services</a>
+      <a href="contact.html">Contact us</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1 style="text-align: center; margin-top: 50px;">Our Services</h1>
+    <section class="services">
+      <div class="service-item">
+        <i class='bx bx-code-alt'></i>
+        <h3>Web Development</h3>
+        <p>We offer custom web development services tailored to your business needs.</p>
+      </div>
+      <div class="service-item">
+        <i class='bx bx-paint'></i>
+        <h3>UI/UX Design</h3>
+        <p>Our team specializes in creating intuitive and visually stunning user interfaces.</p>
+      </div>
+      <div class="service-item">
+        <i class='bx bx-mobile'></i>
+        <h3>Mobile App Development</h3>
+        <p>We excel in developing mobile applications for iOS and Android platforms.</p>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
